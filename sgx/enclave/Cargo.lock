@@ -7,8 +7,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "enclave"
 version = "0.1.0"
 dependencies = [
- "sgx_tstd 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "sgx_types 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_tstd 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_types 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -33,10 +33,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "sgx_alloc"
-version = "0.9.8"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "sgx_trts 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_trts 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -49,45 +49,45 @@ dependencies = [
 
 [[package]]
 name = "sgx_tprotected_fs"
-version = "0.9.8"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "sgx_trts 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "sgx_types 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_trts 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_types 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "sgx_trts"
-version = "0.9.8"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "sgx_types 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_types 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "sgx_tstd"
-version = "0.9.8"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "sgx_alloc 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_alloc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "sgx_build_helper 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "sgx_tprotected_fs 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "sgx_trts 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "sgx_types 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "sgx_unwind 0.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_tprotected_fs 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_trts 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_types 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_unwind 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "sgx_types"
-version = "0.9.8"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "sgx_unwind"
-version = "0.0.0"
+version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "sgx_trts 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sgx_trts 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [metadata]
@@ -95,10 +95,10 @@ dependencies = [
 "checksum filetime 0.1.15 (registry+https://github.com/rust-lang/crates.io-index)" = "714653f3e34871534de23771ac7b26e999651a0a228f47beb324dfdf1dd4b10f"
 "checksum libc 0.2.40 (registry+https://github.com/rust-lang/crates.io-index)" = "6fd41f331ac7c5b8ac259b8bf82c75c0fb2e469bbf37d2becbba9a6a2221965b"
 "checksum redox_syscall 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)" = "0d92eecebad22b767915e4d529f89f28ee96dbbf5a4810d2b844373f136417fd"
-"checksum sgx_alloc 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)" = "2f8528f6c72e037e9a300960cccf2e35935b22e358b9bab033fb14e16c579dcd"
+"checksum sgx_alloc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "024065cb2bd07eedb3419a792fb2f28fba1d55ebc50bc0332790c4452d40e35d"
 "checksum sgx_build_helper 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ee53e3b297178bf5a3b6275015020875149e12424d7d2ec01a2f0cfcc475b878"
-"checksum sgx_tprotected_fs 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)" = "01c5ff3ff4da51894151381aa70f94b0f9c422ede7836b431d73352d1afba1ff"
-"checksum sgx_trts 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)" = "1293a490ceb58471411c704f0163b716970bf53133ce9fdf2c163f46930603ea"
-"checksum sgx_tstd 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)" = "f3a99559870bfbb939f5baf0e7fc438e8d629c987da4af4f4d0b3a0a24a224a1"
-"checksum sgx_types 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)" = "dae9217f41cde70a81a3adfab96d78bcab678fd97ad4eedee004a3f0f6bb21a9"
-"checksum sgx_unwind 0.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "36947158619ad13e5c7841a6546f715b6da41181933994df4cc7e1e5d6665a24"
+"checksum sgx_tprotected_fs 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "f8f72409c41a6caa9f7b3f159cb34af2675ca06bc43c644114d9a69c985e4973"
+"checksum sgx_trts 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "5c3f481502aaa72062b44ff5b3bbdd48b711e547cd4518cee7da832dc5e1037d"
+"checksum sgx_tstd 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "7a4644da836cba98f9b08c8812ec1183915ecf6c78decf7b1e1601960b780825"
+"checksum sgx_types 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "856c6648b731660db14bca279ffefeca4093de8ebb9e5eebc98406b9d97dcd41"
+"checksum sgx_unwind 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "60709f596c2f7236cec7412589a7933931767fd86243c4372379cc78e79b9576"
