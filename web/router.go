@@ -2,7 +2,6 @@ package web
 
 import (
 	"bytes"
-	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -71,9 +70,9 @@ func authRequired(store *store.Store) gin.HandlerFunc {
 		session := sessions.Default(c)
 		sessionId, ok := session.Get(sessionIdKey).(string)
 		if !ok || sessionId == "" {
-			publicError(c, http.StatusUnauthorized, errors.New("Missing session id"))
+			c.AbortWithStatus(http.StatusUnauthorized)
 		} else if _, err := store.FindUserBySession(sessionId); err != nil {
-			publicError(c, http.StatusUnauthorized, err)
+			c.AbortWithStatus(http.StatusUnauthorized)
 		} else {
 			c.Next()
 		}
