@@ -10,8 +10,10 @@ crate-type = ["staticlib"]
 [features]
 default = []
 
-[dependencies.num]
-path = "../num"
+[dependencies]
+serde = { version = "~1.0.70", default-features = false }
+serde_derive = { version = "~1.0.70" }
+serde_json = { version = "~1.0.22", default-features = false }
 
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
 sgx_tstd = "=1.0.0"
