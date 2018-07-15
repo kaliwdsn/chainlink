@@ -60,10 +60,10 @@ func (ma *Multiply) Perform(input models.RunResult, _ *store.Store) models.RunRe
 		return input.WithError(err)
 	}
 
-	output, err := C.multiply(C.CString(adapter_json, input_json))
+	output, err := C.multiply(C.CString(string(adapter_json)), C.CString(string(input_json)))
 	if err != nil {
-		return input.WithError(fmt.Errorf(C.GoString(body)))
+		return input.WithError(fmt.Errorf(C.GoString(output)))
 	}
 
-	return input.WithValue(C.GoString(body))
+	return input.WithValue(C.GoString(output))
 }

@@ -11,10 +11,10 @@ crate-type = ["staticlib"]
 default = []
 
 [dependencies]
-serde = { version = "~1.0.70", default-features = false }
-serde_derive = { version = "~1.0.70" }
-serde_json = { version = "~1.0.22", default-features = false }
+serde = { path = "/opt/rust-sgx-sdk/third_party/serde-rs/serde/serde", default-features = false }
+serde_derive = { path = "/opt/rust-sgx-sdk/third_party/serde-rs/serde/serde_derive" }
+serde_json = { path = "/opt/rust-sgx-sdk/third_party/serde-rs/json", default-features = false }
 
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
-sgx_tstd = "=1.0.0"
-sgx_types = "=1.0.0"
+sgx_tstd = { path = "/opt/rust-sgx-sdk/sgx_tstd" }
+sgx_types = { path = "/opt/rust-sgx-sdk/sgx_types" }
